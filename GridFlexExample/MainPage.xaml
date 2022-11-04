@@ -2,9 +2,11 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="GridFlexExample.MainPage">
-    <FlexLayout>
-        <Grid FlexLayout.Basis="50%" ColumnDefinitions="45, 80*" BackgroundColor="LightBlue" >
-            <BoxView Color="LightCoral" HeightRequest="40" Grid.ColumnSpan="2"/>
-        </Grid>
-    </FlexLayout>
+    <VerticalStackLayout>
+        <FlexLayout HeightRequest="80">
+            <Grid FlexLayout.Basis="50%" ColumnDefinitions="*" BackgroundColor="LightBlue" >
+                <BoxView Color="LightCoral" HeightRequest="40"/>
+            </Grid>
+        </FlexLayout>
+    </VerticalStackLayout>
 </ContentPage>
